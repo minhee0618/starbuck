@@ -1,0 +1,337 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px*/
+  min-width: 320px;
+  width: 1224px;
+}
+/**************/
+.floating {
+  position: fixed;
+  z-index: 1000;
+  width: 140px;
+  top: 15.4rem;
+  right: 8rem;
+}
+
+.main {
+  border: 1px dashed red;
+  margin: 200px auto;
+  width: 1224px;
+}
+
+/**************/
+.main1-visual {
+  height: 32.3vw;
+  background: url(/starbucks-image/main1-visual-background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.visual00-slogan {
+  position: absolute;
+  top: 30%;
+  left: 3rem;
+}
+.visual-btn {
+  position: absolute;
+  top: 59.14%;
+  left: 10.85%;
+  width: 25.05%;
+  text-align: center;
+}
+.visual-btn .btn-01 {
+  width: 34%;
+  height: 38px;
+  background: none;
+  border: 2px solid #006241;
+  border-radius: 5px;
+  line-height: 38px;
+}
+.visual-btn .btn-01:hover {
+  background: #006241;
+  color: #fff;
+  transition: all 1s ease-in-out;
+}
+.visual-01 {
+  position: absolute;
+  top: 15.48%;
+  left: 48.1%;
+  width: 13.7%;
+}
+.visual-02 {
+  position: absolute;
+  top: 17.95%;
+  left: 58.1%;
+  width: 13.65%;
+}
+.visual-03 {
+  position: absolute;
+  top: 24.15%;
+  left: 37.4%;
+  width: 14.85%;
+}
+.visual-04 {
+  position: absolute;
+  top: 19.042%;
+  left: 67.35%;
+  width: 13.7%;
+}
+/***************/
+.main2-notice {
+  display: flex;
+  height: 62px;
+}
+.notice-left {
+  display: flex;
+  width: 50%;
+  background-color: #111;
+  color: #f6f5ef;
+}
+.notice-right {
+  display: flex;
+  width: 50%;
+  background-color: #f6f5ef;
+  color: #111;
+}
+.notice-left-btn,
+.notice-right-btn{
+  background: none;
+} 
+.notice-left-btn img,
+.notice-right-btn img{
+    width: 30px;
+    height: 30px;
+}
+
+/***************/
+.main3-reward {
+  display: flex;
+  background-color: #1e3932;
+  padding: 40px 0;
+}
+
+.reward-wrap {
+  display: flex;
+  width: 100%;
+  margin: 0 10px;
+}
+.reward-logo {
+  width: 16.3%;
+  margin: 0 40px;
+  text-align: center;
+}
+.reward-logo img{
+    width: 176px;
+}
+
+.reward-content {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info-text {
+  color: #fff;
+  line-height: 1.5;
+}
+
+.info-text h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.info-text p {
+  font-size: 17px;
+}
+
+.info-btn {
+    margin: auto auto 10px auto;
+}
+
+.info-btn-signup {
+  height: 38px;
+  line-height: 36px;
+  margin: 10px;
+  padding: 0 21.4px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00704a;
+  border: 2px solid #00704a;
+}
+
+.info-btn-login {
+  height: 38px;
+  line-height: 36px;
+    margin: 10px;
+  padding: 0 21.4px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 20px 0;
+}
+
+.gift-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gift-text {
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.gift-btn-gift {
+  height: 38px;
+  line-height: 36px;
+  padding: 0 21.4px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin: 0;
+}
+/*****************/
+.main4-bean {
+    background-image: url(starbucks-image/main4-bean-background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.bean-image{
+    margin: auto 200px;
+}
+.bean-content{
+    text-align: center;
+    margin: auto 0;
+}
+.bean-btn {
+    margin: 30px;
+  background: none;
+  color: #1a3c34;
+  border: 2px solid #1a3c34;
+  border-radius: 5px;
+  width: 125px;
+  height: 38px;
+}
+
+/***************/
+.main5-reserve {
+    background-image: url(starbucks-image/main5-reserve-background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.reserve-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.reserve-btn {
+  background: none;
+  color: #ba6e36;
+  border: 2px solid #ba6e36;
+  border-radius: 5px;
+  width: 125px;
+  height: 38px;
+  margin: 30px;
+}
+/***************/
+.main6-fav {
+    display: flex;
+    background-image: url(starbucks-image/main6-fav-background);
+    background-size: cover;
+    background-position: center;
+
+}
+.fav-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+}
+.fav-btn {
+  color: #fff;
+  background: none;
+  font-size: 15px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 30px;
+}
+.fav-content img{
+    margin-top: 40px;
+}
+.fav-btn {
+  width: 125px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 34px;
+  text-align: center;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+/***************/
+.main7-magazine {
+    display: flex;
+    background-image: url(starbucks-image/main7-magazine-background);
+    background-size: cover;
+    background-position: center;
+}
+.magazine-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+.magazine-content{
+    margin: 30px;
+}
+.magazine-btn {
+  width: 125px;
+  color: #000;
+  font-size: 15px;
+  line-height: 34px;
+  text-align: center;
+  background: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 30px;
+}
+.magazine-btn
+/***************/
+.main8-store {
+}
+.store-btn {
+  width: 125px;
+  color: #000;
+  font-size: 15px;
+  line-height: 34px;
+  text-align: center;
+  background: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
