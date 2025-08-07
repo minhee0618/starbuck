@@ -1,0 +1,478 @@
+body {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+/********floating*********/
+.floating {
+  position: fixed;
+  width: 140px;
+  right: 5%;
+  z-index: 999;
+}
+.main {
+  border: 1px dashed red;
+  margin: 0;
+}
+/**********main1-visual**********/
+.main1-visual {
+  height: 32.3vw;
+  background-image: url("starbucks-image/main1-visual-background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.visual00-slogan {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 33%;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+.visual-01 {
+  position: absolute;
+  width: 16%;
+  top: 13%;
+  left: 58%;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+}
+.visual-02 {
+  position: absolute;
+  width: 16%;
+  top: 16%;
+  left: 70%;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 1s;
+}
+.visual-03 {
+  position: absolute;
+  width: 16%;
+  top: 25%;
+  left: 46%;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 1.4s;
+}
+.visual-04 {
+  position: absolute;
+  width: 16%;
+  top: 22%;
+  left: 82%;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 1.8s;
+}
+.visual00-slogan img,
+.visual-01 img,
+.visual-02 img,
+.visual-03 img,
+.visual-04 img {
+  width: 100%;
+}
+.visual-link {
+  position: absolute;
+  top: 65%;
+  left: 22%;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 2s;
+}
+.visual-link a {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #006241;
+  border: 2px solid #006241;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.visual-link a:hover {
+  background: #006241;
+  color: #fff;
+  transition: all 0.8s ease-in-out;
+}
+/**********main2-notice**********/
+.notice-main {
+  display: flex;
+}
+.notice-left,
+.notice-right {
+  display: flex;
+  width: 50%;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.notice-left {
+  background-color: #111;
+  color: #f6f5ef;
+}
+.notice-right {
+  background-color: #f6f5ef;
+  color: #111;
+}
+.notice-left-title,
+.notice-right-title {
+  font-size: 16px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+.notice-left-btn,
+.notice-right-btn {
+  background: none;
+  border: none;
+}
+.notice-left-btn img,
+.notice-right-btn img {
+  width: 30px;
+  height: 30px;
+}
+.notice-left-btn img {
+  filter: invert(100%);
+}
+.notice-right-btn img {
+  transform: rotate(90deg);
+}
+/*******************notice-left공지사항**/
+.notice-left-slider {
+  width: 70%;
+  height: 20px;
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+}
+.notice-left-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: noticeSlide 6s linear infinite;
+}
+.notice-line {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+@keyframes noticeSlide {
+  0%,
+  30% {
+    transform: translateY(0);
+  }
+  33%,
+  63% {
+    transform: translateY(-20px);
+  }
+  66%,
+  96% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*****************notice-right 프로모션*/
+.notice-right-promo-toggle-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  background-color: #eee;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #333;
+}
+.notice-right-promo-toggle-content.open {
+  display: block;
+  max-height: 200px;
+  padding: 10px 15px;
+}
+/**********main3-notice**********/
+.main3-reward {
+  display: flex;
+  background-color: #1e3932;
+  padding: 30px;
+}
+.reward-logo {
+  width: 26%;
+}
+.reward-logo img {
+  width: 100%;
+}
+.reward-content {
+  width: 70%;
+  padding-left: 3%;
+  color: #f6f5ef;
+  line-height: 1.5;
+}
+.info-content,
+.gift-content {
+  display: flex;
+}
+.info-text h2 {
+  font-size: 26px;
+}
+.info-text p {
+  font-size: 17px;
+}
+.gift-text p {
+  font-size: 13px;
+}
+.info-link,
+.gift-link {
+  margin: auto 0 auto auto;
+}
+.info-link .info-signup,
+.info-link .info-login,
+.gift-link .gift-gift {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  padding: 5px 15px;
+  margin: 3px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.info-link .info-signup {
+  background-color: #00704a;
+  border: 2px solid #00704a;
+}
+.info-link .info-login,
+.gift-link .gift-gift {
+  border: 2px solid #fff;
+}
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 10px 0;
+}
+
+/**********main4-bean**********/
+.main4-bean {
+  display: flex;
+  background-image: url(starbucks-image/main4-bean-background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0 150px;
+}
+.bean-image {
+  width: 30%;
+}
+.bean-content {
+  width: 70%;
+  text-align: left;
+  padding: 150px 0 100px 100px;
+}
+.bean-txt {
+  margin-bottom: 50px;
+}
+.bean-content a {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #1a3c34;
+  border: 2px solid #1a3c34;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bean-content a:hover {
+  background: #1a3c34;
+  color: #fff;
+  transition: all 1s ease-in-out;
+}
+
+/**********main5-join**********/
+.main5-reserve {
+  display: flex;
+  background-image: url(starbucks-image/main5-reserve-background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0 50px;
+}
+.reserve-content {
+  width: 60%;
+  text-align: right;
+  padding: 100px 50px;
+}
+.reserve-content img {
+  margin-bottom: 50px;
+}
+.reserve-content a {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ba6e36;
+  border: 2px solid #ba6e36;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reserve-content a:hover {
+  background: #ba6e36;
+  color: #fff;
+  transition: all 1s ease-in-out;
+}
+.reserve-image {
+  width: 40%;
+}
+
+/**********main6-fav**********/
+.main6-fav {
+  display: flex;
+  background-image: url(starbucks-image/main6-fav-background);
+  background-size: cover;
+  background-position: center;
+  padding: 0 50px;
+}
+.fav-content {
+  width: 40%;
+  text-align: right;
+  padding: 100px 50px;
+}
+.fav-content img {
+  margin-bottom: 50px;
+}
+.fav-content a {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.fav-content a:hover {
+  background: #fff;
+  color: #111;
+  transition: all 1s ease-in-out;
+}
+.fav-image {
+  width: 60%;
+  margin: 50px 0;
+}
+
+/**********main7-magazine**********/
+.main7-magazine {
+  display: flex;
+  background-image: url(starbucks-image/main7-magazine-background);
+  background-size: cover;
+  background-position: center;
+  padding: 0 50px;
+}
+.magazine-content {
+  width: 60%;
+  text-align: center;
+  padding: 100px 50px;
+}
+.magazine-content img {
+  margin-bottom: 50px;
+}
+.magazine-content a {
+  display: block;
+  width: 15%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #111;
+  border: 2px solid #111;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.magazine-content a:hover {
+  background: #111;
+  color: #fff;
+  transition: all 1s ease-in-out;
+}
+.magazine-image {
+  width: 40%;
+  margin: 50px 0 0;
+}
+
+/**********main8-magazine**********/
+.main8-store {
+  display: flex;
+  position: relative;
+  background-image: url(starbucks-image/main8-store-background);
+  background-size: cover;
+  background-position: center;
+  padding: 50 100px;
+}
+.store-image1 {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  z-index: 10;
+}
+.store-image2 {
+  position: absolute;
+  left: 3%;
+}
+.store-sub-image {
+  position: absolute;
+  left: 25%;
+}
+.store-sub-image2 {
+  position: absolute;
+  left: 70%;
+  bottom: 1%;
+}
+.store-content {
+  text-align: left;
+  padding: 5% 5% 10% 50%;
+}
+.store-content img {
+  margin-bottom: 20px;
+}
+.store-content a {
+  display: block;
+  width: 15%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #111;
+  border: 2px solid #111;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.store-content a:hover {
+  background: #111;
+  color: #fff;
+  transition: all 1s ease-in-out;
+}
